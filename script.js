@@ -87,7 +87,7 @@ function renderer() {
             missionBtn.textContent = soldier.MissionTime;
             soldier.MissionTime--;
         } else {
-          missionBtn.textContent = "mission"; // Switch player when timer runs out
+          missionBtn.textContent = "mission competed!"; // Switch player when timer runs out
         }
       }, 1000);;
     });
