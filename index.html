@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>BATALION FORCE MANAGMENT</h1>
+    </header>
+    <main>
+      <form>
+        <input
+          type="text"
+          placeholder="Full Name"
+          id="input-full-name"
+          required
+        />
+        <input type="text" placeholder="Rank" id="input-rank" required />
+        <input
+          type="text"
+          placeholder="Position"
+          id="input-position"
+          required
+        />
+        <input type="text" placeholder="Platoon" id="input-platoon" required />
+        <input
+          type="number"
+          placeholder="Mission Time (seconds)"
+          id="input-mission-time"
+          required
+        />
+        <select id="select-status">
+          <option value="active">Active</option>
+          <option value="reserve">Reserve</option>
+          <option value="retired">Retired</option>
+        </select>
+        <input type="submit" value="Add Personal" id="submitBtn" />
+      </form>
+      <h2>FORCE OVERVIEW</h2>
+    </main>
+    <footer>
+      <table id="ForcesTable">
+        <thead>
+          <tr>
+            <th><button id="fnBtn">Full Name</button></th>
+            <th>RANK</th>
+            <th>POSITION</th>
+            <th>PLATOON</th>
+            <th>STATUS</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div id="editpopup" class="popup">
+        <div class="popupcontent">
+          <h2>Edit Mission</h2>
+          <input
+            type="text"
+            placeholder="Full Name"
+            id="edit-full-name"
+            required
+          />
+          <input type="text" placeholder="Rank" id="edit-rank" required />
+          <input
+            type="text"
+            placeholder="Position"
+            id="edit-position"
+            required
+          />
+          <input type="text" placeholder="Platoon" id="edit-platoon" required />
+          <input
+            type="number"
+            placeholder="Mission Time (seconds)"
+            id="edit-mission-time"
+            required
+          />
+          <select id="edit-status">
+            <option value="active">Active</option>
+            <option value="reserve">Reserve</option>
+            <option value="retired">Retired</option>
+          </select>
+          <div class="popupbuttons">
+            <button id="saveedit">Save</button>
+            <button id="canceledit">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
